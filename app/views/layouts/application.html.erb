@@ -10,6 +10,10 @@
   <nav>
     <div class="nav-wrapper">
       <ul id="nav-mobile" class="right hide-on-med-and-down">
+        <li><% if current_user && current_user.admin %>
+              <%= link_to "New Product", new_product_path %>
+            <% end %>
+        </li>
         <li><%= link_to cart_path do %>
            Cart | Total items: <span id = 'cart_items_id'><%= cart_items %></span>
            <% end %></li>
