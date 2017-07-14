@@ -1,5 +1,5 @@
 class ProductsController < ApplicationController
-  before_action :authorize, except: [:index, :show]
+  before_filter :authorize, except: [:index, :show]
 
   def index
     @products = Product.all
