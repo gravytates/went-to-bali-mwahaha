@@ -25,6 +25,6 @@ FactoryGirl.define do
     name 'Coffee'
     description 'Magical Elixir'
     price '10.00'
-    image 'image.jpg'
+    image 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQL_jAKF3OXirTrTlIBZYJz3CDiIU4J-Qm-4xlac4bITGVxlA50wehxZpL2'
   end
 end
