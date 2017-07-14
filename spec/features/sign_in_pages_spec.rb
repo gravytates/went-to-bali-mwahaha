@@ -7,8 +7,8 @@ describe "admin user routes and features" do
     FactoryGirl.create(:user)
     FactoryGirl.create(:product)
     visit sign_in_path
-    fill_in "email", with: 'good@lord'
-    fill_in "password", with: '123456'
+    fill_in "email", with: 'good@email.com'
+    fill_in "password", with: 'Az3456'
     click_button 'SIGN IN!'
     expect(page).to have_content('Coffee')
   end

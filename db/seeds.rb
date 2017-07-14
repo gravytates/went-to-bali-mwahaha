@@ -12,4 +12,8 @@ class Seed
   end
 end
 
+User.create!(name: "Grady", admin: true, email: "admin@admin.com", password: "Az1234", password_confirmation: "Az1234" )
+User.create!(name: "Fred", email: "freddy@email.com", password: "Az1234", password_confirmation: "Az1234" )
+
+
 Seed.begin

@@ -72,7 +72,7 @@ If all went well, rails will now make this project available in your browser by 
 
 To log in as admin, provided credentials are:
 ```
-email: adming@adming
+email: admin@admin.com
 ```
 ```
 password: 123456

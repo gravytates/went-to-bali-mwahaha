@@ -1,14 +1,4 @@
 <h1>Sign in</h1>
-<% if errors.any? %>
-  <h3>Please fix these errors:</h3>
-  <ul>
-    <% errors.full_messages.each do |message| %>
-      <li><%= message %></li>
-    <% end %>
-  </ul>
-<% end %>
-
-
 <%= form_tag '/sign_in' do %>
   Email: <%= text_field_tag :email %>
   Password: <%= password_field_tag :password %>
