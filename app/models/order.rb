@@ -1,7 +1,7 @@
 class Order < ApplicationRecord
   has_many :order_items
   belongs_to :user, optional: true
-  validates :quantity, :order_id, presence: true
+  validates :total_price, :decimal, :status, :user_id, presence: true
 
   before_save :calculate_total
 
