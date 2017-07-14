@@ -11,5 +11,7 @@ describe "admin user routes and features" do
     fill_in "password", with: '123456'
     click_button 'SIGN IN!'
     expect(page).to have_content('you successfully signed in!')
+    click_on 'Add to cart'
+    expect(page).to have_content('Total items: 1')
   end
 end
