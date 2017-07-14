@@ -17,6 +17,7 @@ class ApplicationController < ActionController::Base
   end
 
   def authorize
+    flash[:notice] = "You needed proper authorization to visit that page"
     redirect_to '/sign_in' unless admin
   end
 end

@@ -13,6 +13,7 @@ class ProductsController < ApplicationController
   def create
     @product = Product.new(product_params)
     if @product.save
+      flash[:notice] = "New product successfully added!"
       redirect_to '/'
     else
       render :new
@@ -22,6 +23,7 @@ class ProductsController < ApplicationController
   def show
     # binding.pry
     @product = Product.find(params.fetch(:id))
+    flash[:notice] = "Item successfully removed!"
     respond_to do |format|
       format.html { redirect_to product_path(@product) }
       format.js
