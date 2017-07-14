@@ -23,7 +23,6 @@ class ProductsController < ApplicationController
   def show
     # binding.pry
     @product = Product.find(params.fetch(:id))
-    flash[:notice] = "Item successfully removed!"
     respond_to do |format|
       format.html { redirect_to product_path(@product) }
       format.js

@@ -5,6 +5,13 @@ RailsAdmin.config do |config|
   # config.label_methods << :description # Default is [:name, :title]
   # config.browser_validations = false # Default is true
 
+
+# attempt to include authorization yet helper methods are not available here
+  # config.authorize_with do |controller|
+  #   redirect_to main_app.root_path unless admin
+  # end
+
+
   ## == Devise ==
   # config.authenticate_with do
   #   warden.authenticate! scope: :user
