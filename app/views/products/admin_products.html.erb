@@ -1,0 +1,12 @@
+<% @products.each do |product| %>
+
+  <h4><%= link_to product.name, product_path(product), id: product.name, remote: true %></h4>
+  <p><%= number_to_currency product.price %></p>
+  <%= form_for @order_item, method: :post, remote: true do |f| %>
+    <%= f.hidden_field :product_id, value: product.id %>
+    <span id = "<%= product.id %>"></span>
+    <%= f.number_field :quantity, value: 1, min: 1 %>
+    <span class="waves-effect waves-light btn"><%= f.submit "Add to cart" %></span>
+  <% end %>
+
+<% end %>

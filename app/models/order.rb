@@ -13,4 +13,10 @@ class Order < ApplicationRecord
     self.status = 2
     self.save
   end
+
+  rails_admin do
+    configure :user do
+      label 'Owner of this ball: '
+    end
+  end
 end
