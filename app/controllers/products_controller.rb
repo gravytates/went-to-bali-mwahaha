@@ -19,6 +19,15 @@ class ProductsController < ApplicationController
     end
   end
 
+  def show
+    # binding.pry
+    @product = Product.find(params.fetch(:id))
+    respond_to do |format|
+      format.html { redirect_to product_path(@product) }
+      format.js
+    end
+  end
+
   private
   def product_params
     params.require(:product).permit(:name, :description, :price)

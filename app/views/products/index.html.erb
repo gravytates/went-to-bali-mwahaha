@@ -4,11 +4,11 @@
   <div class="section">
   <% @products.each do |product| %>
     <div class="col s4">
-      <h4><%= product.name %></h4>
-      <p><%= product.description %></p>
+      <h4><%= link_to product.name, product_path(product), id: product.name, remote: true %></h4>
       <p><%= number_to_currency product.price %></p>
       <%= form_for @order_item, method: :post, remote: true do |f| %>
         <%= f.hidden_field :product_id, value: product.id %>
+        <span id = "<%= product.id %>"></span>
         <%= f.number_field :quantity, value: 1 %>
         <span class="waves-effect waves-light btn"><%= f.submit "Add to cart" %></span>
       <% end %>

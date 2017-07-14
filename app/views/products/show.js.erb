@@ -1,0 +1,4 @@
+console.log('<%= @product.id %>');
+
+$('#<%= @product.id %>').after("<%= j render 'product_details' %>");
+$('#<%= @product.id %>').remove();
