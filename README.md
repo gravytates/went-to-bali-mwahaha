@@ -7,6 +7,39 @@ This site is my week 3 independent rails project. It is designed to start as a f
 Web browser with ES6 compatibility
 Examples: Chrome, Safari
 
+### AJAX implementation
+
+I instantiated three primary examples of Asynchronous Javascript and XML (AJAX) to improve the UX for the site.
+
+1. Adding products to a shopping cart updates the cart's nav-bar count dynamically and without page reload.
+
+2. Clicking on a product's title will show it's further information and details in place on the /products route.
+
+3. When viewing your cart, deleting an item now updates the list and the nav-bar count dynamically without a page reload.
+
+Testing is possible through use of PhantomJS and the Poltergeist gem.
+
+### Refactored features
+
+1. No negative quantities can be used for products.
+
+2. Appropriate flash messages when creating products, signing in, signing up, and signing out of accounts.
+
+3. Products can be updated and deleted via the admin panel.
+
+4. Users can be removed via the admin panel.
+
+5. Prices can be set with real currency decimals, rather than just whole integers.
+
+6. Basic validations for Products, Users, Orders, and Order Items.
+
+7. Thorough validations for email and passwords upon signing up.
+
+8. Easy admin links on the nav-bar with a product creation short-cut for faster usability.
+
+9. AJAX integration testing.
+
+
 ### Installing
 
 Clone this repo by typing into the terminal:
