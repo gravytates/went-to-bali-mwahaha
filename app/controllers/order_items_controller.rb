@@ -11,13 +11,6 @@ class OrderItemsController < ApplicationController
     end
   end
 
-  def update
-    @order = current_order
-    @item = @order.order_items.find(params[:id])
-    @item.update_attributes(item_params)
-    @order.save
-  end
-
   def destroy
     @order = current_order
     @item = @order.order_items.find(params[:id])

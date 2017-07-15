@@ -14,9 +14,9 @@ class Order < ApplicationRecord
     self.save
   end
 
-  rails_admin do
-    configure :user do
-      label 'Owner of this ball: '
-    end
-  end
+  # rails_admin do
+  #   configure :user do
+  #     label 'Owner of this ball: '
+  #   end
+  # end
 end
