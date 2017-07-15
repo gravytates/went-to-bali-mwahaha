@@ -10,6 +10,7 @@ class SessionsController < ApplicationController
       flash[:notice] = user.name + ", you successfully signed in!"
       redirect_to '/'
     else
+      flash[:notice] = "Oops, it looks like there was a problem signing in!"
       redirect_to '/sign_in'
     end
   end
