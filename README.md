@@ -1,6 +1,6 @@
 # _Bollywood Memorabilia_
 
-This site is my week 3 independent rails project. It is designed to start as a fork from another project from another programmer who is no longer with our agency. Goals included implementation of AJAX functionality, testing, and refactored features, before finishing the site for my fictitious new agency. Useful gems used in this application include rails_admin, bcrypt, simpleCov, factoryGirl, poltergeist, and faker.
+This site is my week 3 independent rails project. It is designed to start as a fork from another project from another programmer who is no longer with our agency. Goals included implementation of AJAX functionality, testing, and refactored features, before finishing the site for my fictitious new agency. Useful gems used in this application include rails_admin, bcrypt, simpleCov, factoryGirl, poltergeist, and faker. 100% of lines of code are touched by unit and integration testing as measured by simpleCov.
 
 ## Prerequisites
 
