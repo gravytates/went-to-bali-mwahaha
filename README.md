@@ -75,7 +75,7 @@ To log in as admin, provided credentials are:
 email: admin@admin.com
 ```
 ```
-password: 123456
+password: Az1234
 ```
 
 ### Testing
