@@ -12,4 +12,15 @@ describe "admin user routes and features" do
     click_button 'SIGN IN!'
     expect(page).to have_content('Coffee')
   end
+
+  it 'will create a new product' do
+    FactoryGirl.create(:user)
+    visit sign_in_path
+    fill_in "email", with: 'good@email.com'
+    fill_in "password", with: 'Az3456'
+    click_button 'SIGN IN!'
+    expect(page).to have_content('successfully signed in!')
+    click_on 'Sign out'
+    expect(page).to have_content('Successfully signed out!')
+  end
 end
